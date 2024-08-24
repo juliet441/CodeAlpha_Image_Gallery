@@ -23,6 +23,15 @@ nav ul li a
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+nav ul li a:hover
+{
+    color: #fff;
+    background-color: #a1a0a0;
 }
 header 
 {
@@ -117,42 +126,76 @@ header p
     font-size: 1.2em;
     margin-top: 20px;
 }
-
-
-footer 
-{
+footer {
     background-color: #222;
-    color: white;
+    color: #eee;
     padding: 20px 0;
-    text-align: center;
     font-family: Arial, sans-serif;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
-.footer-content p 
-{
-    margin: 0;
-    padding: 0;
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid #444;
 }
-.socials 
-{
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-links ul, .footer-socials ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
 }
-.socials li 
-{
-    display: inline;
-    margin: 0 10px;
+
+.footer-links ul li, .footer-socials ul li {
+    margin-bottom: 10px;
 }
-.socials li a img 
-{
+
+.footer-links ul li a, .footer-socials ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover, .footer-socials ul li a:hover {
+    color: #fff;
+}
+
+.footer-socials ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-socials ul li img {
     width: 24px;
     height: 24px;
     transition: transform 0.3s ease;
 }
-.socials li a img:hover 
-{
+
+.footer-socials ul li img:hover {
     transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
